@@ -1,3 +1,4 @@
+licenses(["notice"])
 package(default_visibility = ["//visibility:public"])
 
 cc_library(
@@ -12,7 +13,7 @@ cc_library(
 		"-Wextra",
 		"-Wno-missing-field-initializers",
 		"-pthread",
-		"-I./third-party/gtest-170",
+		"-I./third_party/gtest-170",
 	],
 	linkopts = ["-pthread"],
 	linkstatic = 1,
