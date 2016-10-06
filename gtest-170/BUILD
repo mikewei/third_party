@@ -17,10 +17,9 @@ cc_library(
 	],
 	linkopts = ["-pthread"],
 	linkstatic = 1,
-	hdrs_check = "loose",
 	srcs = glob(
-		["src/*.cc"], 
-		["src/gtest-all.cc"],
+		["src/*.cc", "src/*.h"], 
+		exclude = ["src/gtest-all.cc"],
 	),
 	deps = [],
 )

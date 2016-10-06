@@ -22,14 +22,13 @@ cc_library(
 	],
 	linkopts = ["-pthread"],
 	linkstatic = 1,
-	hdrs_check = "loose",
 	srcs = glob(
 		[
 			"include/jemalloc/*.h",
 			"include/jemalloc/internal/*.h",
 			"src/*.c",
 		], 
-		["src/zone.c"],
+		exclude = ["src/zone.c"],
 	),
 	deps = [],
 )

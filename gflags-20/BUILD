@@ -18,8 +18,8 @@ cc_library(
 		"-pthread",
 	],
 	linkstatic = 1,
-	hdrs_check = "loose",
 	srcs = glob([
+		"src/config.h",
 		"src/flags/*.h", 
 		"src/mutex.h",
 		"src/util.h",
