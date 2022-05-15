@@ -4,7 +4,7 @@ package(default_visibility = ["//visibility:public"])
 cc_library(
 	name = "gtest-170",
 	includes = ["include"],
-	hdrs = glob(["include/gtest/*.h"]),
+	hdrs = glob(["include/gtest/*.h", "include/gtest/internal/*.h"]),
 	copts = [
 		"-DGTEST_HAS_PTHREAD=1",
 		"-g",
